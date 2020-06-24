@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #quadrado{
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+        <!-- 
+            Crie dois botões no HTML chamados: 'Verde', ,'Vermelho'. ao clicar neles, 
+            o style="background-color: {COR-SELECIONADA}" 
+            vai ser alterado dinamicamente Alterar-Style de uma div
+         -->
+
+        <input type="submit" value="Verde" onclick="verde()">
+        <input type="submit" value="Vermelho" onclick="vermelho()">
+        <div id="quadrado"></div>
+
+        <script>
+            function verde(){
+                let div = document.getElementById('quadrado')
+                div.style.background = 'green'
+            }
+            function vermelho(){
+                let div = document.getElementById('quadrado')
+                div.style.background = 'red'
+            }
+        </script>
+
+
+</body>
+</html>

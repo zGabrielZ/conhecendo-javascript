@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Agora que você já sabe utilizar o evento 'click', aprenda a usar o 'mouseover', 
+        ao passar o mouse em cima da 'lampada.jpg' altere ela para 'lampada-on.jpg'. -->
+
+
+    <div id="img">
+        <img src="imagens/lampada.jpg" alt="">
+    </div>
+
+    <script>
+        var img = document.getElementById('img')
+
+        img.addEventListener('mouseover',trocar)
+        img.addEventListener('mouseout',voltar)
+
+        function trocar(){
+            img.innerHTML = `<img src = "/imagens/lampada-on.jpg"></img>`
+            img.style.width = '600px'
+            img.style.background = 'black'
+        }
+        function voltar(){
+            img.innerHTML = `<img src = "imagens/lampada.jpg"></img>`
+            img.style.width = '600px'
+            img.style.background = 'black'
+        }
+    </script>
+
+</body>
+</html>

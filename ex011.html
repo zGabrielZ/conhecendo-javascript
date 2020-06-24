@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+            Agora crie um botão que ao ser clicado faça a mesma ação do exercício anterior.
+         -->
+
+        <button id="bt" onclick="texto()">Clique</button> 
+        <div id="resultado"></div>
+
+        <script>
+            const texto = function(){
+                let r = document.getElementById('resultado')
+                
+                r.innerHTML = 'Esse texto foi inserido pelo JavaScript'
+
+            }
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+            2 x - Campo/Input do tipo text. (id=soma1, id=soma2)
+            1 x - Botão (id=btn-soma)
+            1 x - Campo (id=resultado-soma)
+
+            Caso esteja preenchido um valor númerico nos dois campos(id=soma1, id=soma2), 
+         -->
+
+        <input type="text" id="soma1" name="soma1"><br>
+        <input type="text" id="soma2" name="soma2"><br>
+        <input type="submit" value="Soma" onclick="soma()">
+        <div id="resultado"></div>
+
+        <script>
+            function soma(){
+                let num1 = document.getElementById('soma1').value
+                let num2 = document.getElementById('soma2').value
+                let numero1 = Number(num1)
+                let numero2 = Number(num2)
+                let r = document.getElementById('resultado')
+                r.innerHTML = `Soma dos dois números é ${numero1+numero2}`
+            }
+        </script>
+
+
+</body>
+</html>

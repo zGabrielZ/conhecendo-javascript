@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- No seu HTML exiba a imagem de uma lampada, 
+        ao clicar em cima da lampada, troque o src dela para a lampada que está acessa. -->
+
+
+    <div id="img">
+        <img src="/imagens/lampada.jpg" alt="" onclick="trocar()">
+    </div>
+
+    <script>
+        const trocar = function(){
+            let img = document.getElementById('img')
+            img.innerHTML = `<img src = "/imagens/lampada-on.jpg"></img>`
+        }
+    </script>
+
+</body>
+</html>
