@@ -7,3 +7,10 @@ let resultado = ()=>{
 }
 
 resultado()
+
+resultado = () =>{
+    let acharMeuNome = nome => nome === 'Gabriel'
+    console.log(nomes.filter(acharMeuNome))
+}
+
+resultado()
