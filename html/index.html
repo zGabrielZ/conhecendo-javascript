@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Jokenpô</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    
+    <h1>Jogo do jokenpô</h1>
+    <div id="button-container">
+        <button id="2-players">2 jogadores</button>
+        <button id="ia-player">Com IA</button>
+    </div>
+
+
+    <div id="container" class="hide">
+        <div class="box2" id="papel"><img src="../imagens/papel.png"  height="90px"></div>
+        <div class="box2" id="pedra"><img src="../imagens/pedra.png" height="90px"></div>
+        <div class="box2" id="tesoura"><img src="../imagens/tesoura.png" height="90px"></div>
+    </div>
+
+    <div id="container" class="hide">
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+
+        <div id="scoreboard-container">
+            <h2>Placar</h2>
+            <span class="score-box">
+                <span class="j1-scoreboard">J1</span>:
+                <span class="scoreboard-1">0</span>
+            </span>
+            <span class="score-box">
+                <span class="j2-scoreboard">J2</span>:
+                <span class="scoreboard-2">0</span>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="hide">
+        <div class="j1" id="j1">j1</div>
+        <div class="j2" id="j2">j2</div>
+    </div>
+
+    <div id="message" class="hide">
+        <p></p>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
